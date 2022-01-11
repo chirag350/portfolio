@@ -29,3 +29,23 @@ a {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+.avatar {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+
+ul {
+  list-style: none;
+}
+
+.social {
+  border-radius: 50%;
+}
+
+ul a {
+  display: inline-block;
+  margin: 10px;
+
+}

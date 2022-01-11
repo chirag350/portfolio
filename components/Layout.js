@@ -4,8 +4,8 @@ const Layout = ({ children }) => {
     return (
         <div className="next-container">
           <Head>
-            <title>Eggactyl</title>
-            <meta name="description" content="Eggactyl Admin UI" />
+            <title>Chirag's portfolio</title>
+            <meta name="description" content="Chirag's portfolio" />
             <link rel="icon" href="/favicon.png" />
             <meta charSet="UTF-8" />
             <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
