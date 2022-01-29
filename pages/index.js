@@ -11,7 +11,7 @@ export default function Home() {
         <div className="social-links">
           <div className="socials">
             <a href="https://github.com/chirag350"><img src="/github.png" width="50" height="50" className="social" /></a>
-            <a href="https://discord.gg/BNcbMACprP"><img src="/Discord-Logo-Color.png" width="50" height="50" className="social" /></a>
+            <a href="https://discord.gg/BNcbMACprP"><img src="https://img.icons8.com/ios-filled/344/discord.png" width="50" height="50" className="social" /></a>
             <a href="https://steamcommunity.com/id/chiraglamba5/"><img src="/steam.png" width="50" height="50" className="social" /></a>
           </div>
         </div>
