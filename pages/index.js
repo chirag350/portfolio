@@ -1,21 +1,43 @@
-
+import { animated, Spring } from 'react-spring'
+import { Parallax, ParallaxLayer } from '@react-spring/parallax'
+import Skills from '../components/Skills'
+import Contact from '../components/Contact'
 
 export default function Home() {
   return (
     <>
-      <h1>Welcome to Chirag's portfolio</h1>
-      <div className="container">
-        <img src="/favicon.png" className="avatar" alt="Avatar" width="100" height="100" />
-        <h2>Hello There. I'm Chirag!</h2>
-        <p>Hi! I'm Chirag, A full stack developer from India. I'm currently a student and I specialize in Node.js, Bash, React, Next.js. <br /><br /> Connect with me using the following links:</p>
-        <div className="social-links">
-          <div className="socials">
-            <a href="https://github.com/chirag350"><img src="/github.png" width="50" height="50" className="social" /></a>
-            <a href="https://discord.gg/BNcbMACprP"><img src="/discord.png" width="50" height="50" className="social" /></a>
-            <a href="https://steamcommunity.com/id/chiraglamba5/"><img src="/steam.png" width="50" height="50" className="social" /></a>
-          </div>
-        </div>
-      </div>
+      <Spring from={{ opacity: 0 }} to={{ opacity: 1 }}>
+        {styles =>
+          <animated.div style={styles}>
+            <Parallax pages={3} className="text-white bg-background backdrop-blur-xl min-h-screen">
+              <ParallaxLayer offset={0} speed={0.6}>
+                <div className="p-layer">
+                  <h1 className="text-5xl mb-6">Hi! I&apos;m Chirag! </h1>
+                  <p>A full stack developer from India. I&apos;m currently a student.</p>
+                  <h4 className="text-xl mt-4">Scroll down to read more</h4>
+                </div>
+              </ParallaxLayer>
+              <ParallaxLayer offset={1} speed={0.6}>
+                <div className="p-layer">
+                  <h1 className="text-5xl">My Skills</h1>
+                  <Skills />
+                </div>
+              </ParallaxLayer>
+              <ParallaxLayer offset={2} speed={0.8}>
+                <div className="p-layer">
+                  <h1 className="text-5xl">Contact me!</h1>
+                  <Contact />
+                  <footer className="absolute bottom-0 mb-6">
+                    <p className="text-center text-lg text-gray-300">
+                      Made with <span className="text-red-500">❤️</span> by Chirag
+                    </p>
+                  </footer>
+                </div>
+              </ParallaxLayer>
+            </Parallax>
+          </animated.div>
+        }
+      </Spring>
     </>
   )
 }

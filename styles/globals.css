@@ -1,56 +1,19 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: "Cascadia Code", "Fira Code", "Fira Mono", Menlo, Monaco, Consolas, "Lucida Console", monospace;
-  background-color: #222831;
-  color: #EEEEEE;
-  text-align: center;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.p-layer {
+  @apply flex justify-center items-center m-auto text-center flex-col h-screen;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+.skill-item {
+  @apply flex flex-row bg-background-table;
 }
 
-* {
-  box-sizing: border-box;
+.skill-item-child {
+  @apply flex justify-center items-center text-center hover:bg-background-table-hover bg-background-table-child w-full p-2 mx-1 my-1;
 }
 
-.container {
-  background-color: #393E46;
-  width: 45%;
-  margin: 0 auto;
-  padding: 2rem;
-  border: 10px solid #393E46;
-  border-radius: 15px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.avatar {
-  border-radius: 50%;
-  width: 100px;
-  height: 100px;
-}
-
-.socials {
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-}
-
-div a {
-  display: inline-block;
-  margin: 5px;
-}
-
-@media only screen and (max-width: 768px) {
-  .container {
-    width: 80%;
-  }
+.contact-item {
+  @apply inline-flex justify-center items-center text-center mx-4;
 }
