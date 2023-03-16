@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.grid-item {
+    @apply flex flex-col items-center justify-center p-2 md:p-4 rounded bg-gray-900 m-1 md:m-2;
+}
