@@ -26,7 +26,7 @@ export default function Page() {
                 </h1>
                 <div className="flex items-center">
                     <a href="https://github.com/chirag350" aria-label="Github" target="_blank" className="text-2xl md:text-3xl xl:text-4xl font-['Tilt_Neon'] font-black mx-2 transition-colors duration-300" style={{ color: inViewport ? "#4ade80" : "#0ea5e9" }}><FaGithub /></a>
-                    <a href="https://twitter.com/chirag350" aria-label="Twitter" target="_blank" className="text-2xl md:text-3xl xl:text-4xl font-['Tilt_Neon'] font-black mx-2 transition-colors duration-300" style={{ color: inViewport ? "#4ade80" : "#0ea5e9" }}><FaTwitter /></a>
+                    <a href="https://twitter.com/chirag_lol" aria-label="Twitter" target="_blank" className="text-2xl md:text-3xl xl:text-4xl font-['Tilt_Neon'] font-black mx-2 transition-colors duration-300" style={{ color: inViewport ? "#4ade80" : "#0ea5e9" }}><FaTwitter /></a>
                     <a href="https://discord.com/users/611165590744203285" aria-label="Discord" target="_blank" className="text-2xl md:text-3xl xl:text-4xl font-['Tilt_Neon'] font-black mx-2 transition-colors duration-300" style={{ color: inViewport ? "#4ade80" : "#0ea5e9" }}><FaDiscord /></a>
                 </div>
             </section>
