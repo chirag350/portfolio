@@ -25,9 +25,9 @@ export default function Page() {
                     <TextTransition springConfig={presets.default} direction="down"><a href="#" className="text-2xl md:text-3xl xl:text-4xl font-['Tilt_Neon'] font-black" style={{ color: inViewport ? "#4ade80" : "#0ea5e9" }}>{!inViewport ? "Chirag L." : "Welcome"}</a></TextTransition>
                 </h1>
                 <div className="flex items-center">
-                    <a href="https://github.com/chirag350" target="_blank" className="text-2xl md:text-3xl xl:text-4xl font-['Tilt_Neon'] font-black mx-2 transition-colors duration-300" style={{ color: inViewport ? "#4ade80" : "#0ea5e9" }}><FaGithub /></a>
-                    <a href="https://twitter.com/chirag350" target="_blank" className="text-2xl md:text-3xl xl:text-4xl font-['Tilt_Neon'] font-black mx-2 transition-colors duration-300" style={{ color: inViewport ? "#4ade80" : "#0ea5e9" }}><FaTwitter /></a>
-                    <a href="https://discord.com/users/611165590744203285" target="_blank" className="text-2xl md:text-3xl xl:text-4xl font-['Tilt_Neon'] font-black mx-2 transition-colors duration-300" style={{ color: inViewport ? "#4ade80" : "#0ea5e9" }}><FaDiscord /></a>
+                    <a href="https://github.com/chirag350" aria-label="Github" target="_blank" className="text-2xl md:text-3xl xl:text-4xl font-['Tilt_Neon'] font-black mx-2 transition-colors duration-300" style={{ color: inViewport ? "#4ade80" : "#0ea5e9" }}><FaGithub /></a>
+                    <a href="https://twitter.com/chirag350" aria-label="Twitter" target="_blank" className="text-2xl md:text-3xl xl:text-4xl font-['Tilt_Neon'] font-black mx-2 transition-colors duration-300" style={{ color: inViewport ? "#4ade80" : "#0ea5e9" }}><FaTwitter /></a>
+                    <a href="https://discord.com/users/611165590744203285" aria-label="Discord" target="_blank" className="text-2xl md:text-3xl xl:text-4xl font-['Tilt_Neon'] font-black mx-2 transition-colors duration-300" style={{ color: inViewport ? "#4ade80" : "#0ea5e9" }}><FaDiscord /></a>
                 </div>
             </section>
             <section className="items-center justify-center bg-gradient-to-b from-gray-900 to-gray-800 hero flex w-full flex-col md:flex-row h-screen">
@@ -55,19 +55,19 @@ export default function Page() {
                 </div>
                 <div className="grid grid-cols-2 lg:grid-cols-4 p-4">
                     <div className="grid-item">
-                        <img src="https://img.icons8.com/color/128/000000/javascript.png" className="w-24 h-24 md:h-40 md:w-40" />
+                        <img src="https://img.icons8.com/color/128/000000/javascript.png" className="w-24 h-24 md:h-40 md:w-40" alt="javascript logo" />
                         <h3 className="text-xl text-sky-400 font-['Tilt_Neon']">JavaScript</h3>
                     </div>
                     <div className="grid-item">
-                        <img src="https://img.icons8.com/color/128/000000/nodejs.png" className="w-24 h-24 md:h-40 md:w-40" />
+                        <img src="https://img.icons8.com/color/128/000000/nodejs.png" className="w-24 h-24 md:h-40 md:w-40" alt="nodejs logo" />
                         <h3 className="text-xl text-sky-400 font-['Tilt_Neon']">Node.JS</h3>
                     </div>
                     <div className="grid-item">
-                        <img src="https://img.icons8.com/color/128/000000/typescript.png" className="w-24 h-24 md:h-40 md:w-40" />
+                        <img src="https://img.icons8.com/color/128/000000/typescript.png" className="w-24 h-24 md:h-40 md:w-40" alt="typescript logo" />
                         <h3 className="text-xl text-sky-400 font-['Tilt_Neon']">TypeScript</h3>
                     </div>
                     <div className="grid-item">
-                        <img src="/react.webp" className="w-24 h-24 md:h-40 md:w-40" />
+                        <img src="/react.webp" className="w-24 h-24 md:h-40 md:w-40" alt="reactjs logo" />
                         <h3 className="text-xl text-sky-400 font-['Tilt_Neon']">React.js</h3>
                     </div>
                     <div className="grid-item">
@@ -75,15 +75,15 @@ export default function Page() {
                         <h3 className="text-xl text-sky-400 font-['Tilt_Neon']">Next.js</h3>
                     </div>
                     <div className="grid-item">
-                        <img src="https://img.icons8.com/color/128/000000/tailwindcss.png" className="w-24 h-24 md:h-40 md:w-40" />
+                        <img src="https://img.icons8.com/color/128/000000/tailwindcss.png" className="w-24 h-24 md:h-40 md:w-40" alt="tailwind logo" />
                         <h3 className="text-xl text-sky-400 font-['Tilt_Neon']">Tailwind</h3>
                     </div>
                     <div className="grid-item">
-                        <img src="https://img.icons8.com/color/128/000000/golang.png" className="w-24 h-24 md:h-40 md:w-40" />
+                        <img src="https://img.icons8.com/color/128/000000/golang.png" className="w-24 h-24 md:h-40 md:w-40" alt="go lang logo" />
                         <h3 className="text-xl text-sky-400 font-['Tilt_Neon']">Go</h3>
                     </div>
                     <div className="grid-item">
-                        <img src="https://img.icons8.com/color/128/000000/bash.png" className="w-24 h-24 md:h-40 md:w-40 -mt-1" />
+                        <img src="https://img.icons8.com/color/128/000000/bash.png" className="w-24 h-24 md:h-40 md:w-40 -mt-1" alt="bash logo" />
                         <h3 className="text-xl text-sky-400 font-['Tilt_Neon'] mt-1">Bash</h3>
                     </div>
                 </div>
@@ -131,8 +131,8 @@ export default function Page() {
             <footer className="flex flex-col md:flex-row items-center justify-center md:justify-between w-full border-t p-2 text-center drop-shadow-md shadow-md bg-gradient-to-b from-gray-800 to-gray-900">
                 <p className="text-white my-1">Copyright &copy; Chirag L. All rights and wrongs reserved</p>
                 <div className="flex flex-row">
-                    <p className="text-orange-500">Powered by <a href="https://pages.cloudflare.com"><FaCloudflare className="inline-block h-6 w-6" /></a></p> <p className="text-white mx-2">and</p>
-                    <p className="text-[#1FB141]">Icons by <a href="https://icons8.com"><SiIcons8 className="inline-block h-6 w-6" /></a></p>
+                    <p className="text-orange-500">Powered by <a href="https://pages.cloudflare.com" aria-label="cloudflare pages"><FaCloudflare className="inline-block h-6 w-6" /></a></p> <p className="text-white mx-2">and</p>
+                    <p className="text-[#1FB141]">Icons by <a href="https://icons8.com" aria-label="icons8"><SiIcons8 className="inline-block h-6 w-6" /></a></p>
                 </div>
             </footer>
 
