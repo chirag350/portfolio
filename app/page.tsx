@@ -88,7 +88,7 @@ export default function Page() {
                     </div>
                 </div>
             </section>
-            <section className="items-center justify-center hero flex w-full flex-col mt-24">
+            <section className="items-center justify-center hero flex w-full flex-col my-24">
                 <div className="text-center">
                     <h2 className="text-4xl md:text-5xl xl:text-6xl text-red-500 font-['Montserrat_Alternates'] text-right my-8">Contact me</h2>
                 </div>
@@ -99,11 +99,7 @@ export default function Page() {
                         <div className="flex flex-col ">
                             <div className="flex flex-row items-center text-left ml-2 my-2 text-[#5865F2]">
                                 <FaDiscord className="h-16 w-16" />
-                                <p className="text-2xl text-left ml-4">Chirag.#5568</p>
-                            </div>
-                            <div className="flex flex-row items-center text-left ml-2 my-2 text-[#5865F2]">
-                                <FaEnvelope className="h-16 w-16" />
-                                <p className="text-2xl text-left ml-4">me@chiragdev.xyz</p>
+                                <p className="text-2xl text-left ml-4">@chiraglol</p>
                             </div>
                         </div>
                     </div>
